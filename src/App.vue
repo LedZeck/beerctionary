@@ -1,5 +1,4 @@
 <!-- Needs to create the Vue components for each one of App's elements -->
-
 <template>
   <v-app id="beerctionaryApplication">
 
@@ -44,6 +43,9 @@
     <main>
       <v-container fluid>
         <div class="title">Application content: todo</div>
+        <div class="title">
+          <Welcome></Welcome>
+        </div>
         <!--v-router-->
       </v-container>
     </main>
@@ -51,6 +53,7 @@
 </template>
 
 <script>
+  import Welcome from './components/Welcome'
   export default {
     data () {
       return {
@@ -69,7 +72,17 @@
         mini: false,
         right: null
       }
+    },
+    components: {
+      Welcome
     }
+    //  Primary API consuming
+    // mounted: function mounted () {
+    //   this.$http.get('https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22maceio%22)%20and%20u%3D%22c%22&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys')
+    //   .then(response => {
+    //     console.log(response.data.query.results.channel)
+    //   })
+    // }
   }
 </script>
 
@@ -85,5 +98,11 @@
 
 #menu-logo{
   height: 40px;
+}
+#beerctionaryApplication {
+  background-image: url('../static/main_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;;
+  background-size: cover;
 }
 </style>

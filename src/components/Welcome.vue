@@ -1,6 +1,6 @@
 <template>
   <div id="welcome">
-
+    {{msg}}
   </div>
 </template>
 <script>
