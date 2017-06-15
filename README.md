@@ -6,10 +6,10 @@
 
 > To this, we gonna use the following tools:
 >> * VueJS (Indeed) [Official Repository](https://github.com/vuejs/vue)
-* Vue-resource (To API consuming) [Official Repository](https://github.com/pagekit/vue-resource)
-* VuetifyJS (Style library based on Google's Material Design) [Official Repository](https://github.com/vuetifyjs/vuetify)
-* Punk API (API itself) [Official Repository](https://github.com/samjbmason/punkapi-db)
-* Free Time :D
+>> * Vue-resource (To API consuming) [Official >> Repository](https://github.com/pagekit/vue-resource)
+>> * VuetifyJS (Style library based on Google's Material Design) [Official Repository](https://github.com/vuetifyjs/vuetify)
+>> * Punk API (API itself) [Official Repository](https://github.com/samjbmason/punkapi-db)
+>> * Free Time :D
 
 ## Build Setup
 
