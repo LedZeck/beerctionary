@@ -1,7 +1,7 @@
 <!-- Needs to create the Vue components for each one of App's elements -->
 <template>
   <v-app id="beerctionaryApplication">
-
+    <!-- Application drawer menu  -->
     <v-navigation-drawer persistent light :mini-variant.sync="mini" v-model="drawer">
       <v-list class="pa-0">
         <v-list-item>
@@ -31,15 +31,16 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-
+    <!-- End of application drawer -->
+    <!-- Application toolbar -->
     <v-toolbar fixed class="amber darken-1" light>
-      <!-- <v-toolbar-side-icon light @click.native.stop="drawer = !drawer"></v-toolbar-side-icon> -->
       <v-btn icon light @click.native.stop="drawer = !drawer">
-        <!-- <v-icon>favorite</v-icon> -->
         <img id="menu-logo" src="../static/jar-of-beer.svg" alt="Beer Menu">
       </v-btn>
       <v-toolbar-title>Beerctionary</v-toolbar-title>
     </v-toolbar>
+    <!-- End of application toolbar -->
+    <!-- Application general contents -->
     <main>
       <v-container fluid>
         <div class="title">Application content: todo</div>
@@ -78,7 +79,7 @@
     }
     //  Primary API consuming
     // mounted: function mounted () {
-    //   this.$http.get('https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22maceio%22)%20and%20u%3D%22c%22&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys')
+    //   this.$http.get('SOME NICE URL')
     //   .then(response => {
     //     console.log(response.data.query.results.channel)
     //   })
@@ -104,5 +105,6 @@
   background-repeat: no-repeat;
   background-position: center;;
   background-size: cover;
+  color: white;
 }
 </style>
