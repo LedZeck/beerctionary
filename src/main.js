@@ -4,10 +4,10 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import VueResource from 'vue-resource'
-import Vuetify from 'vuetify'
-import 'vuetify/dist/vuetify.min.css'
+import ElementUi from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 
-Vue.use(Vuetify)
+Vue.use(ElementUi)
 Vue.use(VueResource)
 
 Vue.config.productionTip = false
@@ -16,6 +16,6 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
-  template: '<App/>',
+  render: h => h(App),
   components: { App }
 })
